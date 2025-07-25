@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    printf("Yo, this code works! Enter any number: ");
+    int num;
+    scanf("%d", &num);
+    while (getchar() != '\n' && getchar() != EOF); // Clear input buffer
+    printf("You entered %d. Hell yeah, it ran!\n", num);
+    printf("Press Enter to exit...");
+    getchar(); // Pause
+    return 0;
+}
